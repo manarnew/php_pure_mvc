@@ -1,0 +1,28 @@
+{
+    "name": "manar/framwork",
+    "description": "this is mvc framwork build by manar",
+    "type": "project",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Manar Omer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=8.0",
+        "mvc/alframwork":"1.0"
+    },
+     "version":"1.0",
+     "repositories":[
+        {
+            "type":"path",
+            "url":"alframwork"
+        }
+     ]
+}

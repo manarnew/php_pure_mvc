@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a8b8db18908ec92314c5a7b4e23d361b",
+    "packages": [
+        {
+            "name": "mvc/alframwork",
+            "version": "1.0",
+            "dist": {
+                "type": "path",
+                "url": "alframwork",
+                "reference": "6dd3a3849e92408dc79963d00c24e9faa8d9aa7f"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Alframwork\\": "framwork/",
+                    "Ilinuminates\\": "ilinuminates/"
+                },
+                "files": [
+                    "helpers/alframwork_helper.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "manar"
+                }
+            ],
+            "description": "this is framwork",
+            "transport-options": {
+                "relative": true
+            }
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.0"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

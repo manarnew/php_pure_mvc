@@ -1,0 +1,40 @@
+{
+    "packages": [
+        {
+            "name": "mvc/alframwork",
+            "version": "1.0",
+            "version_normalized": "1.0.0.0",
+            "dist": {
+                "type": "path",
+                "url": "alframwork",
+                "reference": "6dd3a3849e92408dc79963d00c24e9faa8d9aa7f"
+            },
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Alframwork\\": "framwork/",
+                    "Ilinuminates\\": "ilinuminates/"
+                },
+                "files": [
+                    "helpers/alframwork_helper.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "manar"
+                }
+            ],
+            "description": "this is framwork",
+            "transport-options": {
+                "relative": true
+            },
+            "install-path": "../mvc/alframwork"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

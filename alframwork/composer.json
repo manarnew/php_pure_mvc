@@ -1,0 +1,23 @@
+{
+    "name": "mvc/alframwork",
+    "description": "this is framwork",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alframwork\\": "framwork/",
+            "Ilinuminates\\": "ilinuminates/"
+        },
+        "files":[
+            "helpers/alframwork_helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "manar"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "version": "1.0"
+}
