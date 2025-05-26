@@ -14,15 +14,15 @@ class Router
 
   private static $public;
 
-  public static function public_path($bind = null)
+  public static function public_path($bind = 'public')
   {
-    static::$public = $bind ?? '/public';
+    static::$public = $bind;
     return static::$public;
   }
-  public static function add(string $method, string $route, $controller, $action, array $middlewares = [])
+  public static function add(string $method, string $route, $controller, $action  = null, array $middleware = [])
   {
     $route = ltrim($route, '/');
-    self::$routes[$method][$route] = compact('controller', 'action', 'middlewares');
+    self::$routes[$method][$route] = compact('controller', 'action', 'middleware');
   }
 
   public function routes()
@@ -38,10 +38,16 @@ class Router
       $patern = "#^$patern$#";
       if (preg_match($patern, $uri, $matches)) {
         $controller = $val['controller'];
-        $action = $val['action'];
-        // $middleware = $val['middleware'];
         $parms = array_filter($matches, 'is_string', ARRAY_FILTER_USE_KEY);
-        return call_user_func_array([new $controller, $action], $parms);
+        if (is_object($controller)) {
+          echo  $controller(...$parms);
+          return '';
+        } else {
+          $action = $val['action'];
+          $middleware = $val['middleware'];
+          echo call_user_func_array([new $controller, $action], $parms);
+          return '';
+        }
       }
     }
     throw new \Exception("this route $uri not  found");
