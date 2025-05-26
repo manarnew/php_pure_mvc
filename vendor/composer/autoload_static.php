@@ -15,6 +15,10 @@ class ComposerStaticInite2b0923eb3dd0e2a71be69fc363103cf
         array (
             'Ilinuminates\\' => 13,
         ),
+        'C' => 
+        array (
+            'Contracts\\' => 10,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -26,6 +30,10 @@ class ComposerStaticInite2b0923eb3dd0e2a71be69fc363103cf
         'Ilinuminates\\' => 
         array (
             0 => __DIR__ . '/..' . '/mvc/alframwork/ilinuminates',
+        ),
+        'Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mvc/alframwork/Contracts',
         ),
         'App\\' => 
         array (

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Ilinuminates\\' => array($vendorDir . '/mvc/alframwork/ilinuminates'),
+    'Contracts\\' => array($vendorDir . '/mvc/alframwork/Contracts'),
     'App\\' => array($baseDir . '/app'),
     'Alframwork\\' => array($vendorDir . '/mvc/alframwork/framwork'),
 );

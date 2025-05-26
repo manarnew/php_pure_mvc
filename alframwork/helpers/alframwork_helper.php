@@ -1,5 +1,11 @@
 <?php
 
+if (!function_exists('url')) {
+    function url(string $url = '')
+    {
+        return $_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/public/' . ltrim($url, '/');
+    }
+}
 
 if (!function_exists('base_path')) {
     function base_path($file = null)

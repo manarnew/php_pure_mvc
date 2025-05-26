@@ -6,7 +6,8 @@
     "autoload": {
         "psr-4": {
             "Alframwork\\": "framwork/",
-            "Ilinuminates\\": "ilinuminates/"
+            "Ilinuminates\\": "ilinuminates/",
+            "Contracts\\":"Contracts/"
         },
         "files":[
             "helpers/alframwork_helper.php"

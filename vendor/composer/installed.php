@@ -22,7 +22,7 @@
         'mvc/alframwork' => array(
             'pretty_version' => '1.0',
             'version' => '1.0.0.0',
-            'reference' => '6dd3a3849e92408dc79963d00c24e9faa8d9aa7f',
+            'reference' => '9cc23a688583a9d36dbd2fb785720b8657509bef',
             'type' => 'library',
             'install_path' => __DIR__ . '/../mvc/alframwork',
             'aliases' => array(),

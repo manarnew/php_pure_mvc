@@ -7,14 +7,15 @@
             "dist": {
                 "type": "path",
                 "url": "alframwork",
-                "reference": "6dd3a3849e92408dc79963d00c24e9faa8d9aa7f"
+                "reference": "9cc23a688583a9d36dbd2fb785720b8657509bef"
             },
             "type": "library",
             "installation-source": "dist",
             "autoload": {
                 "psr-4": {
                     "Alframwork\\": "framwork/",
-                    "Ilinuminates\\": "ilinuminates/"
+                    "Ilinuminates\\": "ilinuminates/",
+                    "Contracts\\": "Contracts/"
                 },
                 "files": [
                     "helpers/alframwork_helper.php"
